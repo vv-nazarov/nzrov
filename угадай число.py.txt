@@ -1,0 +1,55 @@
+from random import randint
+rnd = randint(0,100)
+
+def is_valid(s)
+    if s.isdigit() and 0 = int(s) = 100
+        return True
+    else
+        return False
+        
+def is_valid_num()
+    while True
+        print(Введи от 0 до 100)
+        s = input()
+        if is_valid(s)
+            return s
+        else
+            print(Пидор, повтори!)
+
+def is_ugadal()
+    c = 0
+    while True
+        b = int(is_valid_num())
+        if b  rnd
+            print(Слишком большое)
+            c += 1
+        elif b  rnd
+            print(Слишком маленькое)
+            c += 1
+        else
+            c += 1
+            print(f'Красавчик! Угадал за {c} раз!!!! это число {b}')
+            break
+is_ugadal()
+
+__________________________________________
+
+from random import choice
+answers = ["Бесспорно", "Мне кажется - да", "Пока неясно, попробуй снова", "Даже не думай",
+           "Предрешено", "Вероятнее всего", "Спроси позже", "Мой ответ - нет",
+           "Никаких сомнений", "Хорошие перспективы", "Лучше не рассказывать", "По моим данным - нет",
+           "Можешь быть уверен в этом", "Да", "Сконцентрируйся и спроси опять", "Весьма сомнительно"]
+print('Привет Мир, я магический шар, и я знаю ответ на любой твой вопрос. Как твои Имя?')
+s = input()
+print(f'Привет, {s}!')
+print("Какой у тебя вопрос?")
+v = input()
+while True:
+    print(choice(answers))
+    print("Еcли еще есть вопрос, напиши 'Да'")
+    if input() == 'Да':
+        print("Какой у тебя вопрос?")
+        v = input()
+    else:
+        break
+_____________________________________________
